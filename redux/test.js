@@ -14,3 +14,13 @@ const reducer = (state, action) => {
 };
 
 const { dispatch, subcribe, getState } = createStore(reducer);
+
+subcribe(() => {
+  console.log('subscribe');
+});
+
+getState();
+
+dispatch({ type: 'add' });
+
+getState();
