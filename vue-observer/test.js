@@ -8,4 +8,4 @@ const subscribe = () => {
 const observe = new Observe(data);
 observe.subscribe(subscribe);
 
-observe.data = 10;
+observe.data.a = 10;
