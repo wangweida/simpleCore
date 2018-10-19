@@ -1,4 +1,4 @@
-export default function createStore(reducer) {
+function createStore(reducer) {
   let state;
   const listeners = [];
 
@@ -24,3 +24,5 @@ export default function createStore(reducer) {
     subscribe,
   };
 }
+
+export default createStore;
